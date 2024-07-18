@@ -6,6 +6,9 @@
     <title>To Do Application</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
+    <link href="{% static 'todo/css/default.css' %}" rel="stylesheet">
+    <link href="{% static 'todo/css/index.css' %}" rel="stylesheet">
+
   </head>
 
   <body>
@@ -32,6 +35,7 @@
       <a href="{% url 'index' %}?order=post">Sort by Posted Date</a>
     </div>
 
+    <div class="textArea">
     {% for task in tasks %}
     <div class="text">
       <h2><a href="{% url 'detail' task.id %}">{{ task.title }}</a></h2>
@@ -48,6 +52,7 @@
       </ul>
     </div>
     {% endfor %}
+  </div>
   </body>
 
 </html>
