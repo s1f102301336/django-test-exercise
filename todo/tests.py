@@ -154,3 +154,10 @@ class TodoViewTestCase(TestCase):
         response = client.post(reverse('delete', args=[non_existent_task_id]))
 
         self.assertEqual(response.status_code, 404)
+
+    def test_detail_finish_fail(self):
+        non_existent_task_id = 9999
+        client = Client()
+        response = client.post(reverse('close', args=[non_existent_task_id]))
+
+        self.assertEqual(response.status_code, 404)
