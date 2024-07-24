@@ -1,16 +1,109 @@
-.textArea{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: gainsboro;
-    border: 2px;
-    border-radius: 2%;
+body {
+    font-family: Arial, sans-serif; /* Modern and clean font */
+    background-color: #fafafa; /* Light background for overall page */
+    color: #333; /* Standard text color */
+    margin: 0;
+    padding: 20px;
 }
 
-.text{
-    background-color: whitesmoke;
-    border: 2px;
-    border-radius: 5%;
-    margin: 1%;
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 40px; /* Center the form with auto margin */
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="datetime-local"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green color for submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+div a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+div a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+
+.textArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5%; 
+    background-color: #f0f0f0; 
+    padding: 10px; 
+}
+
+.text {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    flex: 1 1 calc(25% - 1.5%); 
+    box-sizing: border-box; 
+}
+
+.text h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.text ul {
+    padding-left: 20px;
+}
+
+.text ul li {
+    margin-bottom: 5px;
 }
